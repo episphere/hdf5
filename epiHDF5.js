@@ -39,8 +39,9 @@ epiHDF5.fetch = function(file_url='https://ndownloader.figshare.com/files/702498
     fun(f)
   });
 }
-
-//example: epiHDF5.fetch('https://ndownloader.figshare.com/files/7024271',_=>{x=_;console.log('done')})
+// Examples: 
+// epiHDF5.fetch('https://ndownloader.figshare.com/files/7024271',_=>{x=_;console.log('done')})
+// epiHDF5.fetch(undefined,_=>{x=_;console.log('x:',x)})
 
 epiHDF5.loadData = function(fun=console.log,id='datafile'){ // upload input
   if(!document.getElementById(id)){
